@@ -5,12 +5,12 @@ int main() {
     int count=0;
     int test_case;
     cin >> test_case;
-    int n, m,ipt;//문서의 개수, 궁금한 문서 위치, 중요도
+    int n, m,ipt;
     for (int i = 0; i < test_case; ++i) {
         count = 0;
         cin >> n >> m;
         queue<pair<int, int>> q;
-        priority_queue<int> pq; // 우선순위 큐
+        priority_queue<int> pq; 
         for (int j = 0; j < n; ++j) {
             cin >> ipt;
             q.push({ j, ipt });
